@@ -58,28 +58,33 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel1.add(lblHargaTunai, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 80, 25));
 
         txtHargaTunai.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jPanel1.add(txtHargaTunai, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 160, 25));
+        jPanel1.add(txtHargaTunai, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 160, 25));
 
         lblDP.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        lblDP.setText("DP");
+        lblDP.setText("Uang Muka");
         jPanel1.add(lblDP, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 80, 25));
 
         txtDP.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jPanel1.add(txtDP, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 160, 25));
+        jPanel1.add(txtDP, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 160, 25));
 
         lblAngsuran.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        lblAngsuran.setText("Angsuran");
+        lblAngsuran.setText("Lama Cicilan");
         jPanel1.add(lblAngsuran, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 80, 25));
 
         txtAngsuran.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jPanel1.add(txtAngsuran, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 160, 25));
+        txtAngsuran.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAngsuranActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtAngsuran, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 160, 25));
 
         lblCicilan.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        lblCicilan.setText("Cicilan / Bulan");
-        jPanel1.add(lblCicilan, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 80, 25));
+        lblCicilan.setText("Cicilan Perbulan (Rp)");
+        jPanel1.add(lblCicilan, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 110, 25));
 
         txtCicilan.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jPanel1.add(txtCicilan, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 160, 25));
+        jPanel1.add(txtCicilan, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 160, 25));
 
         btnHitung.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         btnHitung.setText("Hitung");
@@ -88,14 +93,14 @@ public class MainFrame extends javax.swing.JFrame {
                 btnHitungActionPerformed(evt);
             }
         });
-        jPanel1.add(btnHitung, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 70, 30));
+        jPanel1.add(btnHitung, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 70, 30));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Aplikasi Leasing ");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/project/irr/image/main-image.926621252_1.jpg"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 60, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 300, 150));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 270));
 
@@ -123,6 +128,10 @@ public class MainFrame extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_btnHitungActionPerformed
+
+    private void txtAngsuranActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAngsuranActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAngsuranActionPerformed
 
     /**
      * @param args the command line arguments
