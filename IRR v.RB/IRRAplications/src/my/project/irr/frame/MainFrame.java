@@ -109,11 +109,30 @@ public class MainFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
+        String msg = "";
+        int status = 0;
         try {
             double hargaTunai = Double.parseDouble(txtHargaTunai.getText());
             double dp = Double.parseDouble(txtDP.getText());
             double cicilan = Double.parseDouble(txtCicilan.getText());
             int angsuran = Integer.parseInt(txtAngsuran.getText());
+            
+            if(hargaTunai<1){
+                msg += "Harga Tunai Tidak Boleh 0 atau negatif , ";
+            }
+            if(dp<1){
+                msg += "DP Tidak Boleh 0 atau negatif , ";
+            }
+            if(cicilan<1){
+                msg += "Cicilan Tidak Boleh 0 atau negatif , ";
+            }
+            if(angsuran<1){
+                msg += "Angsuran Tidak Boleh 0 atau negatif , ";
+            }
+            if(dp>=hargaTunai){
+                msg += "DP Tidak Boleh sama atau lebih besar dari Harga Tunai , ";
+            }
+            
             ProcessIRR hitung = new ProcessIRR(hargaTunai, dp, angsuran, cicilan);
             System.out.println("hikariiiiiiiiiiiiii");
             hitung.hitungIRR();
@@ -124,7 +143,10 @@ public class MainFrame extends javax.swing.JFrame {
             this.setVisible(false);
             System.out.println("================3=---");
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(rootPane, "mohon input dengan benar");
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(rootPane, "mohon input dengan benar ,"+msg);
+        } catch(OutOfMemoryError u){
+            JOptionPane.showMessageDialog(rootPane, "mohon input dengan benar ,"+msg);
         }
 
     }//GEN-LAST:event_btnHitungActionPerformed
