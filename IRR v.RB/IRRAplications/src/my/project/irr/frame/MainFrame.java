@@ -33,6 +33,7 @@ public class MainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         lblHargaTunai = new javax.swing.JLabel();
         txtHargaTunai = new javax.swing.JTextField();
@@ -43,8 +44,18 @@ public class MainFrame extends javax.swing.JFrame {
         lblCicilan = new javax.swing.JLabel();
         txtCicilan = new javax.swing.JTextField();
         btnHitung = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("APLIKASI LEASING");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("MainFrame");
@@ -53,25 +64,34 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblHargaTunai.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        lblHargaTunai.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        lblHargaTunai.setForeground(new java.awt.Color(255, 255, 255));
         lblHargaTunai.setText("Harga Tunai");
         jPanel1.add(lblHargaTunai, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 80, 25));
 
-        txtHargaTunai.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtHargaTunai.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txtHargaTunai.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtHargaTunai.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jPanel1.add(txtHargaTunai, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 160, 25));
 
-        lblDP.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        lblDP.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        lblDP.setForeground(new java.awt.Color(255, 255, 255));
         lblDP.setText("Uang Muka");
         jPanel1.add(lblDP, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 80, 25));
 
-        txtDP.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtDP.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txtDP.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtDP.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jPanel1.add(txtDP, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 160, 25));
 
-        lblAngsuran.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        lblAngsuran.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        lblAngsuran.setForeground(new java.awt.Color(255, 255, 255));
         lblAngsuran.setText("Lama Cicilan");
         jPanel1.add(lblAngsuran, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 80, 25));
 
-        txtAngsuran.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtAngsuran.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txtAngsuran.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtAngsuran.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         txtAngsuran.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtAngsuranActionPerformed(evt);
@@ -79,15 +99,21 @@ public class MainFrame extends javax.swing.JFrame {
         });
         jPanel1.add(txtAngsuran, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, 160, 25));
 
-        lblCicilan.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        lblCicilan.setText("Cicilan Perbulan (Rp)");
-        jPanel1.add(lblCicilan, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 110, 25));
+        lblCicilan.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        lblCicilan.setForeground(new java.awt.Color(255, 255, 255));
+        lblCicilan.setText("Cicilan Perbulan");
+        jPanel1.add(lblCicilan, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 120, 25));
 
-        txtCicilan.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        txtCicilan.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txtCicilan.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtCicilan.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jPanel1.add(txtCicilan, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 160, 25));
 
-        btnHitung.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        btnHitung.setBackground(new java.awt.Color(204, 51, 0));
+        btnHitung.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        btnHitung.setForeground(new java.awt.Color(255, 255, 255));
         btnHitung.setText("Hitung");
+        btnHitung.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnHitung.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnHitungActionPerformed(evt);
@@ -95,16 +121,105 @@ public class MainFrame extends javax.swing.JFrame {
         });
         jPanel1.add(btnHitung, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 70, 30));
 
+        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setText("Aplikasi Leasing ");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("DATA");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/project/irr/image/main-image.926621252_1.jpg"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 300, 150));
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(255, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel1)
+                .addContainerGap(228, Short.MAX_VALUE))
+        );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 270));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 270));
 
-        setSize(new java.awt.Dimension(700, 303));
+        jPanel3.setBackground(new java.awt.Color(204, 51, 0));
+
+        jLabel2.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("\"Masukan data transaksi");
+        jLabel2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        jLabel4.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("APLIKASI LEASING");
+
+        jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Mencari nilai Internal Rate of Return");
+
+        jPanel7.setBackground(new java.awt.Color(51, 51, 51));
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 58, Short.MAX_VALUE)
+        );
+
+        jLabel6.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("pada form di samping.\"");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel6)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel3Layout.createSequentialGroup()
+                            .addGap(49, 49, 49)
+                            .addComponent(jLabel2))
+                        .addGroup(jPanel3Layout.createSequentialGroup()
+                            .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel4)
+                                .addComponent(jLabel5)))))
+                .addContainerGap(63, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel5))
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(54, 54, 54)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addContainerGap(97, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 310, 270));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 270));
+
+        setSize(new java.awt.Dimension(629, 299));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -211,7 +326,14 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnHitung;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JLabel lblAngsuran;
     private javax.swing.JLabel lblCicilan;
     private javax.swing.JLabel lblDP;
